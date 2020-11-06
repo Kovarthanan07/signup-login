@@ -4,6 +4,7 @@ const db = config.get("mongoURI");
 
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useUnifiedTopology", true);
+mongoose.set("useCreateIndex", true);
 
 const connectDB = async () => {
   try {
